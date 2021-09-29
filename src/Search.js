@@ -1,27 +1,22 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Loader from "react-loader-spinner";
+import Currentdetails from "./Currentdetails";
 import "./Search.css";
 
 export default function Search() {
-  const [city, setCity] = useState(null);
-  const [currentData, setCurrentData] = useState("");
+  const [city, setCity] = useState("");
+  const [displayCity, setDisplayCity] = useState("Sydney");
+  const [currentTemp, setCurrentTemp] = useState("19");
+  const [currentDesc, setCurrentDesc] = useState("Sunny");
+  const [currentHumidity, setCurrentHumidity] = useState("80");
+  const [currentWind, setCurrentWind] = useState("2");
 
   function handleResponse(response) {
-    setCurrentData(
-      <ul>
-        <li>Temperature: {Math.round(response.data.main.temp)}°C</li>{" "}
-        <li>Description: {response.data.weather[0].description}</li>
-        <li>Humidity: {response.data.main.humidity}%</li>
-        <li>Wind: {response.data.wind.speed}km/h</li>
-        <li>
-          <img
-            src={`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`}
-            alt="weather icon"
-          />
-        </li>
-      </ul>
-    );
+    setCurrentTemp(Math.round(response.data.main.temp));
+    setCurrentDesc(response.data.weather[0].description);
+    setCurrentHumidity(response.data.main.humidity);
+    setCurrentWind(Math.round(response.data.wind.speed));
+    setDisplayCity(city);
   }
 
   function handleSubmit(event) {
@@ -57,14 +52,13 @@ export default function Search() {
           <p className="current-geo-location">Current Location</p>
         </div>
       </form>
-      <div>{currentData}</div>
       <div>
-        <Loader
-          type="ThreeDots"
-          color="black"
-          height={60}
-          width={60}
-          timeout={3000} //3 secs
+        <Currentdetails
+          city={displayCity}
+          temperature={currentTemp}
+          description={currentDesc}
+          humidity={currentHumidity}
+          wind={currentWind}
         />
       </div>
     </div>
