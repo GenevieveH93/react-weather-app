@@ -10,6 +10,16 @@ export default function App() {
         <Video />
         <Search />
       </div>
+      <div className="repository-link">
+        <a
+          href="https://github.com/GenevieveH93/react-weather-app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open-source code
+        </a>{" "}
+        by Genevieve Hines
+      </div>
     </div>
   );
 }

@@ -8,3 +8,15 @@
   margin: 30px auto 10px auto;
   padding: 20px;
 }
+.App .repository-link {
+  font-size: 8px;
+  color: #548ca8;
+}
+.App .repository-link a {
+  font-size: 8px;
+  color: #548ca8;
+}
+.App .repository-link a:hover {
+  font-size: 8px;
+  color: #334257;
+}
