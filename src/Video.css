@@ -1,0 +1,15 @@
+.video .video-container {
+  height: 150px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video .temp-img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

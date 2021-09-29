@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Loader from "react-loader-spinner";
+import "./Search.css";
 
 export default function Search() {
   const [city, setCity] = useState(null);
@@ -39,13 +40,22 @@ export default function Search() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="search"
-          placeholder="Enter a city..."
-          onChange={updateCity}
-        />
-        <input type="submit" value="Search" />
+      <form className="search" onSubmit={handleSubmit}>
+        <div className="row search-bar">
+          <div className="col-10">
+            <input
+              type="search"
+              placeholder="Enter a city..."
+              onChange={updateCity}
+              className="placeholder-text"
+              autoComplete="off"
+            />
+          </div>
+          <div className="col-2">
+            <input type="submit" value="Search" className="submit-button" />
+          </div>
+          <p className="current-geo-location">Current Location</p>
+        </div>
       </form>
       <div>{currentData}</div>
       <div>
