@@ -1,16 +1,16 @@
 import React from "react";
 import Icon from "./media/sunny-icon.jpeg";
 import "./Currentdetails.css";
+import FormattedDate from "./FormattedDate";
 
 export default function CurrentDetails(props) {
-  let weather = {
-    update: "Sunday 10am",
-  };
   return (
     <div className="currentdetails">
       <h1>{props.data.city}</h1>
       <ul>
-        <li>Last Updated: {weather.update}</li>
+        <li>
+          <FormattedDate date={props.data.date} />
+        </li>
         <li className="text-capitalize">{props.data.description}</li>
       </ul>
       <br />
