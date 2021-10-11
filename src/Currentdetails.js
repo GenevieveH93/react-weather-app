@@ -1,5 +1,4 @@
 import React from "react";
-import Icon from "./media/sunny-icon.jpeg";
 import "./Currentdetails.css";
 import FormattedDate from "./FormattedDate";
 
@@ -17,7 +16,11 @@ export default function CurrentDetails(props) {
       <div className="row">
         <div className="col-6">
           <div className="current-temp clearfix">
-            <img src={Icon} alt="icon" className="current-icon float-left" />
+            <img
+              src={props.data.iconUrl}
+              alt="icon"
+              className="current-icon float-left"
+            />
             <strong>{Math.round(props.data.temperature)}</strong>
             <span className="current-temp-unit"> ºC</span>
           </div>
