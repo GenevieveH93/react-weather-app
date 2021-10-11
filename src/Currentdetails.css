@@ -21,11 +21,7 @@
   line-height: 1;
   margin-bottom: 10px;
 }
-.currentdetails .current-temp img {
-  height: 64px;
-  width: 64px;
-  margin-right: 10px;
-}
+
 .currentdetails .current-temp strong {
   font-size: 65px;
   font-family: "Noto Sans TC", sans-serif;
@@ -34,14 +30,21 @@
   padding: 0;
   color: #476072;
 }
-.currentdetails .current-temp a {
-  font-size: 14px;
+.current-temp-unit a {
   font-family: "Noto Sans TC", sans-serif;
+  color: #548ca8;
+  text-decoration: none;
 }
-.currentdetails .current-temp-unit {
+
+.current-temp-unit a:hover {
+  text-decoration: none;
+  color: #476072;
+}
+
+.current-temp-unit {
   position: relative;
-  top: -34px;
-  left: -5px;
+  top: -33px;
+  left: 5px;
   color: #476072;
   text-decoration: none;
 }

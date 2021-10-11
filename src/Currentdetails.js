@@ -2,6 +2,7 @@ import React from "react";
 import "./Currentdetails.css";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import CurrentTemperature from "./CurrentTemperature";
 
 export default function CurrentDetails(props) {
   return (
@@ -16,13 +17,12 @@ export default function CurrentDetails(props) {
       <br />
       <div className="row">
         <div className="col-6">
-          <div className="current-temp clearfix">
+          <div className="clearfix">
             <WeatherIcon
               code={props.data.icon}
               className="current-icon float-left"
             />
-            <strong> {Math.round(props.data.temperature)}</strong>
-            <span className="current-temp-unit"> ºC</span>
+            <CurrentTemperature celsius={props.data.temperature} />
           </div>
         </div>
         <div className="col-6">
