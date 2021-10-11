@@ -1,23 +1,23 @@
-.search .search-bar {
+.weather .search-bar {
   margin-bottom: 10px;
   line-height: 3;
   font-size: 12px;
   font-family: "Noto Sans TC", sans-serif;
 }
-.search .placeholder-text {
+.weather .placeholder-text {
   width: 100%;
   border: 1px solid #eeeeee;
   border-radius: 5px;
   color: #548ca8;
 }
-.search .submit-button {
+.weather .submit-button {
   width: 100%;
   border: 1px solid #476072;
   border-radius: 5px;
   background-color: #548ca8;
   color: #ffffff;
 }
-.search .current-geo-location {
+.weather .current-geo-location {
   color: #548ca8;
   font-size: 10px;
   font-family: "Noto Sans TC", sans-serif;
@@ -25,7 +25,7 @@
   position: relative;
   right: 13px;
 }
-.search .current-geo-location:hover {
+.weather .current-geo-location:hover {
   text-decoration: underline;
   cursor: pointer;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import Search from "./Search";
+import Weather from "./Weather";
 import Video from "./Video";
 import "./styles.css";
 
@@ -8,7 +8,7 @@ export default function App() {
     <div className="App container">
       <div className="app-wrapping">
         <Video />
-        <Search />
+        <Weather defaultCity="Sydney" />
       </div>
       <div className="repository-link">
         <a
