@@ -5,7 +5,7 @@ import "./styles.css";
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="App container">
       <div className="app-wrapping">
         <Video />
         <Search />
