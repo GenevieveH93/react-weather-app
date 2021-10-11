@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import CurrentDetails from "./Currentdetails";
 import "./Weather.css";
+import Loader from "react-loader-spinner";
 
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
@@ -58,6 +59,14 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "Loading...";
+    return (
+      <Loader
+        type="ThreeDots"
+        color="#548ca8"
+        height={50}
+        width={50}
+        className="loader"
+      />
+    );
   }
 }
