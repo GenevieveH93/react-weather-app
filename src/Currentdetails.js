@@ -21,6 +21,7 @@ export default function CurrentDetails(props) {
             <WeatherIcon
               code={props.data.icon}
               className="current-icon float-left"
+              size={45}
             />
             <CurrentTemperature celsius={props.data.temperature} />
           </div>

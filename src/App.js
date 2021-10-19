@@ -1,13 +1,13 @@
 import React from "react";
 import Weather from "./Weather";
-import Video from "./Video";
+import VideoHeader from "./VideoHeader";
 import "./styles.css";
 
 export default function App() {
   return (
     <div className="App container">
       <div className="app-wrapping">
-        <Video />
+        <VideoHeader />
         <Weather defaultCity="Sydney" />
       </div>
       <div className="repository-link">

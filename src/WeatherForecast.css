@@ -1,0 +1,25 @@
+.WeatherForecast {
+  text-align: center;
+}
+.WeatherForecast hr {
+  color: #548ca8;
+  opacity: 0.4;
+}
+.WeatherForecast .forecast-day {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 14px;
+  color: #548ca8;
+  line-height: 2;
+}
+.WeatherForecast .forecast-temp {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 14px;
+  line-height: 2;
+}
+.WeatherForecast .forecast-temp-max {
+  color: #476072;
+  margin-right: 5px;
+}
+.WeatherForecast .forecast-temp-min {
+  color: #548ca8;
+}
