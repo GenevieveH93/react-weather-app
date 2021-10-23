@@ -4,6 +4,9 @@
   padding: 0;
   margin-bottom: 20px;
   display: block;
-  width: 100%;
+  max-width: 100%;
   overflow: hidden;
+}
+.video video {
+  padding: 0;
 }
