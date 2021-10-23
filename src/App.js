@@ -14,11 +14,19 @@ export default function App() {
         <a
           href="https://github.com/GenevieveH93/react-weather-app"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           Open-source code
         </a>{" "}
-        by Genevieve Hines
+        by Genevieve at{" "}
+        <a
+          href="https://www.instagram.com/fernbaystudio/"
+          target="blank"
+          rel="noopener noreferrer"
+        >
+          Fern Bay Studio
+        </a>
+        . Hosted on Netlify.
       </div>
     </div>
   );
