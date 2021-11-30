@@ -18,7 +18,7 @@ export default function App() {
         >
           Open-source code
         </a>{" "}
-        by Genevieve at{" "}
+        by Genevieve for{" "}
         <a
           href="https://www.instagram.com/fernbaystudio/"
           target="blank"

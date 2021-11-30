@@ -9,6 +9,7 @@
   border: 1px solid #eeeeee;
   border-radius: 5px;
   color: #548ca8;
+  padding-left: 10px;
 }
 .weather .submit-button {
   width: 100%;
@@ -21,9 +22,8 @@
   color: #548ca8;
   font-size: 10px;
   font-family: "Noto Sans TC", sans-serif;
-  text-align: right;
-  position: relative;
-  right: 13px;
+  text-align: left;
+  padding-left: 15px;
 }
 .weather .current-geo-location:hover {
   text-decoration: underline;
@@ -31,4 +31,15 @@
 }
 .loader {
   text-align: center;
+}
+
+@media (max-width: 420px) {
+  .submit-button {
+    margin-top: 5px;
+    font-size: 12px;
+    margin-left: 0px;
+    padding: 0;
+    position: relative;
+    top: -4px;
+  }
 }

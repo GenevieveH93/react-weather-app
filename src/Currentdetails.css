@@ -53,3 +53,9 @@
   position: relative;
   top: -15px;
 }
+
+@media (max-width: 576px) {
+  #data-response {
+    margin-top: 20px;
+  }
+}

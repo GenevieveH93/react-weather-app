@@ -16,7 +16,7 @@ export default function CurrentDetails(props) {
       </ul>
       <br />
       <div className="row">
-        <div className="col-6">
+        <div className="col-sm-6">
           <div className="clearfix">
             <WeatherIcon
               code={props.data.icon}
@@ -26,7 +26,7 @@ export default function CurrentDetails(props) {
             <CurrentTemperature celsius={props.data.temperature} />
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-sm-6" id="data-response">
           <ul>
             <li>Humidity: {Math.round(props.data.humidity)}%</li>
             <li>Wind: {Math.round(props.data.wind)} km</li>

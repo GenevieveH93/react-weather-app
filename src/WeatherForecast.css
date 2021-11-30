@@ -23,3 +23,9 @@
 .WeatherForecast .forecast-temp-min {
   color: #548ca8;
 }
+
+@media (max-width: 576px) {
+  .forecast-temp {
+    margin-bottom: 20px;
+  }
+}
